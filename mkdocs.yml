@@ -1,0 +1,13 @@
+site_name: "payment-service"
+site_description: "Payment Service"
+repo_url: https://github.com/gianfragolo/payment-service
+edit_uri: edit/master/docs
+
+nav:
+  - "Home": "index.md"
+  - "Getting Started": "getting-started.md"
+  - "Code of Conduct": "CODE_OF_CONDUCT.md"
+  - "Readme": "readme.md"
+
+plugins:
+  - techdocs-core

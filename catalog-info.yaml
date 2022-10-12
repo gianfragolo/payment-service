@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "payment-service"
+  description: "Payment Service"
+  tags:
+    - nodejs
+  annotations:
+    github.com/project-slug: gianfragolo/payment-service
+    backstage.io/techdocs-ref: dir:.
+  links:
+    - url: https://github.com/gianfragolo/payment-service
+      title: Github Repo
+      icon: github
+spec:
+  type: service
+  owner: group:product-development
+  system: system:payment-checkout
+  lifecycle: experimental
+  providesApis:
+    - "applepay-wrapper"
+  dependsOn:
+    - resource:payment-cache
+    - resource:aws-cognito  
