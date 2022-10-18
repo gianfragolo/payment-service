@@ -20,6 +20,8 @@ spec:
   consumesApis:
     - "applepay-wrapper"
     - "googlepay-wrapper"    
+  providesApis:
+    - payment-service
   dependsOn:
     - resource:payment-cache
     - resource:aws-cognito  
