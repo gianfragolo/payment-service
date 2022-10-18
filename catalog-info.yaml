@@ -15,7 +15,7 @@ metadata:
 spec:
   type: service
   owner: group:product-development
-  system: system:payment-checkout
+  system: system:payment-gateway
   lifecycle: experimental
   consumesApis:
     - "applepay-wrapper"
