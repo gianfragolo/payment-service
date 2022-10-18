@@ -17,7 +17,7 @@ spec:
   owner: group:product-development
   system: system:payment-checkout
   lifecycle: experimental
-  providesApis:
+  consumesApis:
     - "applepay-wrapper"
     - "googlepay-wrapper"    
   dependsOn:
