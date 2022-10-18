@@ -19,6 +19,8 @@ spec:
   lifecycle: experimental
   providesApis:
     - "applepay-wrapper"
+  apiConsumedBy:
+    - "googlepay-wrapper"
   dependsOn:
     - resource:payment-cache
     - resource:aws-cognito  
